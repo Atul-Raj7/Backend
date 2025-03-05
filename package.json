@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "project",
+  "keywords": [
+    "javascript",
+    "backend",
+    "fun",
+    "and",
+    "a",
+    "lot",
+    "more",
+    "to",
+    "come"
+  ],
+  "license": "ISC",
+  "author": "Atul Raj",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
