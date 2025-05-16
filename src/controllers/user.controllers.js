@@ -85,7 +85,7 @@ const registerUser = asyncHandeler( async (req, res) => {
     const user = await User.create({
         fullname,
         avatar: avatar.url,
-        coverImage: coverImage?url || "",
+        coverImage: coverImage ? coverImage.url : "",
         email,
         password,
         username: username.toLowerCase()
