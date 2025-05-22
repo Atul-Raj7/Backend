@@ -45,7 +45,7 @@ const registerUser = asyncHandeler( async (req, res) => {
     // we are using "User" from models cuz `user.models.js` has mongoose which can talk with db to verify uniqueness
 
 
-    const existedUser = User.findOne({
+    const existedUser = await User.findOne({
         $or: [{ email }, { username }]
     })
 
@@ -83,7 +83,7 @@ const registerUser = asyncHandeler( async (req, res) => {
 
 
     const user = await User.create({
-        fullname,
+        fullName,
         avatar: avatar.url,
         coverImage: coverImage ? coverImage.url : "",
         email,
